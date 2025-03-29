@@ -1,0 +1,79 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+}
+.import-section, .filter-section, .chart-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.import-section input[type="file"] {
+    display: block;
+    margin: 0 auto 10px;
+}
+.import-section button,
+.filter-section button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+.import-section button:hover,
+.filter-section button:hover {
+    background-color: #367c39;
+}
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.filter-row .form-group {
+    flex: 1;
+    min-width: 250px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 600;
+}
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+#import-message {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: red;
+}
+/* Container para os gráficos dinâmicos */
+#chartContainer canvas {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
