@@ -1,0 +1,101 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+}
+.import-section, .filter-section, .category-filter-section, .chart-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.import-section input[type="file"] {
+    display: block;
+    margin: 0 auto 10px;
+}
+.import-section button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+.import-section button:hover {
+    background-color: #367c39;
+}
+.toggle-button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+.toggle-button.active {
+    background-color: #367c39;
+}
+.toggle-button:not(.active) {
+    background-color: #ccc;
+    color: #333;
+}
+#import-message {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: red;
+}
+#category-filter-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cat-section {
+    margin-bottom: 30px;
+}
+.cat-section h3 {
+    margin-bottom: 15px;
+    background: #eee;
+    padding: 8px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    font-size: 1.1em;
+}
+.charts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.chart-container {
+    width: 420px;
+    height: 420px;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chart-container canvas {
+    width: 400px !important;
+    height: 400px !important;
+}
